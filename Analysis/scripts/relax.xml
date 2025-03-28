@@ -1,0 +1,24 @@
+<ROSETTASCRIPTS>
+    <SCOREFXNS>
+        <ScoreFunction name="sfxn" weights="ref2015_cart">
+            <Reweight scoretype="cart_bonded" weight="1.5"/> 
+            <Reweight scoretype="coordinate_constraint" weight="1"/>
+        </ScoreFunction>
+    </SCOREFXNS>
+
+    <MOVERS>
+        <AddConstraints name="add_csts" >
+            <CoordinateConstraintGenerator name="gen_my_csts"
+                bounded="0" ca_only="0" sidechain="1" sd="0.5" />
+        </AddConstraints>
+        <FastRelax name="FastRelax" scorefxn="sfxn" repeats="3" batch="false" ramp_down_constraints="false" cartesian="true" bondangle="false" bondlength="false" min_type="dfpmin_armijo_nonmonotone" />
+    </MOVERS>
+
+    <PROTOCOLS>
+        <Add mover="add_csts"/>
+        <Add mover="FastRelax"/>
+    </PROTOCOLS>
+
+    <OUTPUT />
+
+</ROSETTASCRIPTS>

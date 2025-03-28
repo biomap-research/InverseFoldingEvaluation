@@ -1,0 +1,8 @@
+matplotlib
+pandas
+seaborn
+abnumber
+numpy
+biopython==1.81
+biopandas==0.5.1
+scipy==1.15.1
