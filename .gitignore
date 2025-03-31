@@ -133,4 +133,5 @@ dmypy.json
 *.pt
 
 # Analysis data
-Analysis/data/*
+*.pkl
+*.log

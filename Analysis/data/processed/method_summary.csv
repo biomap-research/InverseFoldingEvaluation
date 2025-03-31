@@ -1,0 +1,5 @@
+﻿Design_method,BLOSM62 similarity for Fab CDRs,BLOSM62 similarity for VHH CDRs,Mutation effect corelation
+ESM-IF,0.42263,0.376484,0.45352
+ProteinMPNN,0.348586,0.36243,0.39872
+LM Design,0.596731,0.512645,0.363997
+AntiFold,0.703239,0.367971,0.199259
