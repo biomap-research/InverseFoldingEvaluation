@@ -75,17 +75,14 @@ InverseFoldingEvaluation/
 
 ## Installation
 
-### dependencies for analysis coes
+### dependencies for analysis codes
 ```bash
 Clone this repository
 git clone https://github.com/biomap-research/InverseFoldingEvaluation.git
 cd InverseFoldingEvaluation
 
 # Install Python dependencies for analysis
-cd Analysis
-pip install -r requirements.txt
-
-tar -xvf data.tar -C ./     # unzip the data for analysis
+pip install -r ./Analysis/requirements.txt
 ```
 
 ### dependencies for inverse folding models
